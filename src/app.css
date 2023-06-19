@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "Old English Text MT";
+  src: url("path/to/old_english_font.woff2") format("woff2"),
+    url("path/to/old_english_font.woff") format("woff");
+  /* Add additional font formats if necessary */
+}
+
+.main {
+  background-image: url("./assets/back.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-attachment: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200vh;
+  min-width: 100vw;
+  color: #ecf8f9;
+}
+
+body {
+  font-family: "Algerian", sans-serif;
+  margin-bottom: 0;
+}
+
+.App {
+  font-family: "Allura", cursive;
+}
+
+.search {
+  height: 2.5%;
+  position: absolute;
+  top: 2%;
+  left: 24%;
+  width: 50%;
+}
+.search-btn {
+  position: absolute;
+  font-family: "Allura", cursive;
+  font-size: 1.2rem;
+  top: 2%;
+  right: 14%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #000;
+  border-color: #fff;
+  align-items: center;
+  background-color: #b39679;
+  border: solid;
+  cursor: pointer;
+  width: 8%;
+}
+.search-btn:hover {
+  background-color: #e2c6aa;
+}
+.popup {
+  position: absolute;
+  top: 30%;
+  width: 80%;
+  padding: 20px;
+  height: 50%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 10);
+}
+
+.big-heading {
+  font-family: "algerian", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 2%;
+  left: 42%;
+  color: #ece9db;
+}
+.sub-heading {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  width: 100%;
+  height: 15%;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: -110%;
+  left: 0;
+  font-family: "Allura", cursive;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #fcfcfc;
+  background-color: #5e2f0d;
+}
+.time {
+  margin-top: 0;
+  font-size: 2.6rem;
+  color: #fff5b8;
+}
+label {
+  font-size: 1.6rem;
+  width: 16%;
+  margin-bottom: 10px;
+  background-color: #8b0000;
+  font-weight: 300;
+  margin-left: 6%;
+  margin-right: 10px;
+  color: #f0c09e;
+}
+
+.log {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  position: absolute;
+  left: 29%;
+  width: 55%;
+}
+
+.log-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #bdbdbd;
+  border-color: #fff;
+  align-items: center;
+  background-color: transparent;
+  border: solid;
+  cursor: pointer;
+  font-size: 2rem;
+  position: relative;
+  left: 40%;
+  top: 70%;
+  font-family: inherit;
+  width: 20%;
+}
+
+.log-btn:hover {
+  background-color: #b39679;
+  color: #5e2f0d;
+}
+.search-page {
+  width: 100%;
+}
+.card-container {
+  padding: 15px 15px;
+  position: absolute;
+  top: 6%;
+  left: 0%;
+  height: 165vh;
+  width: 98%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 10);
+}
+
+.card {
+  width: 90%;
+  height: 80%;
+  background-image: url("./assets/card_back.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #8cc2f7;
+  border-radius: 5px;
+  color: #020202;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 13.5px;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.title {
+  margin-bottom: 10px;
+}
+
+.thumbnail {
+  width: 60%;
+  max-height: 30%;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-bottom: 5px;
+}
+.grid-item {
+  background-color: transparent;
+  border-radius: 8px;
+}
+.category {
+  width: 96%;
+  position: absolute;
+  height: 165vh;
+  top: 12%;
+  left: 2%;
+}
+select {
+  max-width: 50%;
+  position: absolute;
+  margin-top: 2%;
+  left: 25%;
+}
+.category label {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+  text-align: center;
+  background-color: #8b0000;
+  width: 100%;
+}
+/* Styles for the select tag */
+.category-select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Styles for the select dropdown arrow */
+.category-select::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Styles for the select dropdown options */
+.category-select option {
+  background-color: #fff;
+  color: #000;
+}
+.list {
+  width: 80%;
+  text-align: center;
+  color: #000;
+  background-image: url("./assets/card_back.jpeg");
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10%;
+  font-family: "Old English Text MT", cursive;
+}
+
+.list:hover {
+  transform: scale(1.1);
+}
